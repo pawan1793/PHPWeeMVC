@@ -1,0 +1,22 @@
+{
+    "name": "pmore/phpweemvc",
+    "description": "A tiny yet powerful MVC framework for PHP",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pawan More",
+            "email": "pawanmore38@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
