@@ -621,7 +621,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "phpmailer/phpmailer": 20,
-        "eftec/bladeone": 20
+        "eftec/bladeone": 20,
+        "vlucas/phpdotenv": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

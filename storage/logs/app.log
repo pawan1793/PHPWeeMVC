@@ -1,0 +1,1 @@
+[2025-03-12 06:13:06] ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/micro-framework/core/Model.php:16
