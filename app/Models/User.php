@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Core\Model;
+use Illuminate\Database\Eloquent\Model;
 
 class User extends Model {
     protected $table = 'users';

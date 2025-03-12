@@ -100,6 +100,45 @@ Log::info('This is an info log');
 Log::error('An error occurred');
 ```
 
+
+### **📌 Setup a Cron Job for Task Scheduling**  
+
+To enable automatic task execution, follow these steps to set up a cron job for **PHPWeeMVC**:  
+
+---
+
+### ** Step 1: Open the Crontab Editor**  
+Run the following command to edit your cron jobs:  
+```sh
+crontab -e
+```
+
+---
+
+### ** Step 2: Add the Cron Job**  
+At the bottom of the file, add this line to execute `cron.php` every minute:  
+```sh
+* * * * * php /var/www/html/myapp/cron.php >> /dev/null 2>&1
+```
+This ensures that the scheduler runs every minute without printing output.
+
+---
+
+### ** Step 3: Restart the Cron Service**  
+After saving the crontab, restart the **cron service** to apply the changes:  
+```sh
+sudo systemctl restart cron
+```
+
+---
+
+### ** Step 4: Verify if Cron is Running**  
+To check if your cron job is working, run:  
+```sh
+crontab -l
+```
+
+
 ## License
 MIT License
 
