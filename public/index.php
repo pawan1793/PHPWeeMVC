@@ -5,6 +5,9 @@ use Dotenv\Dotenv;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+//  Load database configuration
+
+
 // Load .env before initializing the app
 $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
@@ -17,7 +20,7 @@ function env($key, $default = null) {
 // Set the exception handler
 set_exception_handler([ExceptionHandler::class, 'handle']);
 
-
+require_once __DIR__ . '/../config/database.php';
 //other helper functions 
 if (!function_exists('dd')) {
     function dd(...$vars) {
