@@ -23,7 +23,16 @@ class Router {
             $controller = "App\\Controllers\\$controller";
 
             if (class_exists($controller) && method_exists($controller, $action)) {
-                (new $controller)->$action();
+                $response = call_user_func([new $controller, $action]);
+
+                if (is_string($response)) {
+                    echo $response; // Supports Blade rendering directly
+                } elseif (is_array($response)) {
+                    echo json_encode($response); // Returns JSON for APIs
+                } else {
+                    echo "Invalid response type";
+                }
+                
             } else {
                 http_response_code(404);
                 echo "404 - Not Found";

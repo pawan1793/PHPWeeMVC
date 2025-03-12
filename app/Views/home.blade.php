@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
 <body>
-    <h1>Welcome to the Micro Framework!</h1>
-    <h2>Users List:</h2>
-    <ul>
-        <?php foreach ($users as $user): ?>
-            <li><?= htmlspecialchars($user->name); ?></li>
-        <?php endforeach; ?>
-    </ul>
+    <h1>Welcome to {{ $appName }}!</h1>
 </body>
 </html>

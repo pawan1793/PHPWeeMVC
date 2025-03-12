@@ -2,11 +2,15 @@
 
 namespace Core;
 
-class Blade {
+use eftec\bladeone\BladeOne;
+
+class Blade extends BladeOne {
+    public function __construct() {
+        parent::__construct(__DIR__ . '/../app/Views', __DIR__ . '/../storage/cache', BladeOne::MODE_AUTO);
+    }
+
     public static function render($view, $data = []) {
-        extract($data);
-        ob_start();
-        require __DIR__ . "/../app/Views/$view.blade.php";
-        return ob_get_clean();
+        $blade = new self();
+        return $blade->run($view, $data);
     }
 }

@@ -1,1 +1,7 @@
-/storage/*.log
+/storage/logs/*
+/storage/cache/*
+/vendor/
+/.env
+storage/logs/app.log
+storage/logs/app.log
+vendor/composer/autoload_classmap.php
