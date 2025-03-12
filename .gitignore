@@ -1,6 +1,6 @@
 /storage/logs/*
 /storage/cache/*
-/vendor/
+/vendor/*
 /.env
 storage/logs/app.log
 storage/logs/app.log
