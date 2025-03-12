@@ -1,13 +1,14 @@
 # PHPWeeMVC
 A lightweight PHP micro-framework for building basic web applications.
 
-## Features
-- Simple and lightweight
-- MVC architecture
-- Routing system
-- Blade-like templating engine
-- Database ORM with query builder
-- Logging system
+## **📌 Features**  
+✅ **Eloquent ORM** 
+✅ **Blade Templating**  
+✅ **Mail Support**  
+✅ **Task Scheduling**
+✅ **.env Support**  
+✅ **MVC Architecture**  
+✅ **Error Logging**  
 
 ## Installation
 To install PHPWeeMVC via Composer, run:
