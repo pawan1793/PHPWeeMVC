@@ -1,1 +1,10 @@
 [2025-03-12 06:13:06] ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/micro-framework/core/Model.php:16
+[2025-03-12 06:36:53] ERROR: Call to a member function connection() on null in /var/www/html/micro-framework/vendor/illuminate/database/Eloquent/Model.php:1851
+[2025-03-12 06:38:14] ERROR: Unsupported driver []. in /var/www/html/micro-framework/vendor/illuminate/database/Connectors/ConnectionFactory.php:279
+[2025-03-12 06:38:59] ERROR: Unsupported driver []. in /var/www/html/micro-framework/vendor/illuminate/database/Connectors/ConnectionFactory.php:279
+[2025-03-12 06:41:17] ERROR: Unsupported driver []. in /var/www/html/micro-framework/vendor/illuminate/database/Connectors/ConnectionFactory.php:279
+[2025-03-12 06:41:49] ERROR: Unsupported driver []. in /var/www/html/micro-framework/vendor/illuminate/database/Connectors/ConnectionFactory.php:279
+[2025-03-12 06:41:57] ERROR: Unsupported driver []. in /var/www/html/micro-framework/vendor/illuminate/database/Connectors/ConnectionFactory.php:279
+[2025-03-12 06:47:45] ERROR: Unsupported driver []. in /var/www/html/micro-framework/vendor/illuminate/database/Connectors/ConnectionFactory.php:280
+[2025-03-12 06:47:52] ERROR: Unsupported driver []. in /var/www/html/micro-framework/vendor/illuminate/database/Connectors/ConnectionFactory.php:280
+[2025-03-12 06:50:18] ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'where clause' (Connection: default, SQL: select * from `users` where `users`.`user_id` = 1 limit 1) in /var/www/html/micro-framework/vendor/illuminate/database/Connection.php:826

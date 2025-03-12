@@ -11,7 +11,7 @@ use Core\Blade;
 
 class HomeController extends Controller {
     public function index() {
-       // dd(User::all());
+        //dd(User::find(1));
         $appName = env('APP_NAME');
         return Blade::render('home', ['appName' => $appName]);
     }
